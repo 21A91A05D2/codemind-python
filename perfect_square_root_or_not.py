@@ -1,10 +1,10 @@
-a=int(input())
+n=int(input())
 c=0
-for i in range(2,a):
-    if(i*i==a):
-        c=c+1
-        break
-if(c==1):
-    print("True")
-else:
+for i in range(1,n):
+    if i*i==n:
+        print('True')
+        
+    else:
+        c+=1
+if c==n-1:
     print("False")
