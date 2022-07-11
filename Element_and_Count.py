@@ -1,13 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()))
+c=0
+l=[]
 for i in a:
-    c=0
-    if i!=0:
-        for j in a:
-            if i==j:
-                c+=1
-    if i!=0:
-        print(i,c,end=' ')
-    for j in range(n):
-        if i==a[j]:
-            a[j]=0
+    p=0
+    if i not in l:
+        p=a.count(i)
+        l.append(i)
+        print(i,p,end=' ')
